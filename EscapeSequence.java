@@ -24,14 +24,5 @@ public class EscapeSequence {
         System.out.println("write \"once run anywhere\"");
         System.out.print("C:\\Users\\Public");
 
-
-
-
-
-
-
-
-
-
     }
 }
