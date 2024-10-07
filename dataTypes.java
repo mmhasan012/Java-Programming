@@ -89,7 +89,5 @@ for(int i : arrayVar){
     System.out.print(i + " ");
 
 }
-
-
     }
 }
