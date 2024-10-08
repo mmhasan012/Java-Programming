@@ -63,8 +63,8 @@ public class dataTypes {
 byte byteVar = 10;
 short shortVar = 200;
 int intVar = 1000;
-long longVar = 100000L;
-float floatVar = 20.5f;
+long longVar = 100000L; //
+float floatVar = 20.5f; //
 double doubleVar = 123.456;
 boolean booleanVar = true;
 char charVar = 'A';
