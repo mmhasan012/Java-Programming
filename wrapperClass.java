@@ -37,6 +37,20 @@ Integer numObj = 5;
 int num = numObj; // Unboxing
  */
 
-public class wrapperClass {
-    
+public class WrapperExample {
+    public static void main(String[] args) {
+        // Autoboxing: Converting a primitive to a wrapper object
+        Integer intObj = 10;
+        // Unboxing: Converting a wrapper object to a primitive
+        int intPrimitive = intObj;
+        
+        // Using a utility method from the wrapper class
+        String str = "123";
+        int parsedInt = Integer.parseInt(str);
+        
+        System.out.println("Integer Object: " + intObj);
+        System.out.println("Primitive int: " + intPrimitive);
+        System.out.println("Parsed int from String: " + parsedInt);
+    }
 }
+
