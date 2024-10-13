@@ -52,10 +52,49 @@ System.out.println("x = " + x);       // 10
 System.out.println("++x = " + ++x);   // 11 (pre-increment)
 System.out.println("x++ = " + x++);   // 11 (post-increment, prints before increment)
 System.out.println("x = " + x);       // 12
-System.out.println("--x = " + --x);   // 11 (pre-decrement)
 System.out.println("x-- = " + x--);   // 11 (post-decrement, prints before decrement)
 System.out.println("x = " + x);       // 10
 System.out.println("!true = " + !true); // false
+
+
+/*
+3. Relational Operators
+Relational operators are used to compare two values.
+
+== Equal to
+!= Not equal to
+> Greater than
+< Less than
+>= Greater than or equal to
+<= Less than or equal to
+Exaple
+*/
+//Example
+int a = 10;
+int b = 5;
+System.out.println("a == b: " + (a == b)); // false
+System.out.println("a != b: " + (a != b)); // true
+System.out.println("a > b: " + (a > b));   // true
+System.out.println("a < b: " + (a < b));   // false
+System.out.println("a >= b: " + (a >= b)); // true
+System.out.println("a <= b: " + (a <= b)); // false
+
+/*
+4. Logical Operators
+Logical operators are used to combine multiple boolean expressions.
+
+&& Logical AND: Returns true if both operands are true.
+|| Logical OR: Returns true if at least one operand is true.
+! Logical NOT: Inverts the value of a boolean.
+
+*/
+//Example
+boolean x = true;
+boolean y = false;
+System.out.println("x && y: " + (x && y)); // false
+System.out.println("x || y: " + (x || y)); // true
+System.out.println("!x: " + !x);           // false
+
 
 
 
