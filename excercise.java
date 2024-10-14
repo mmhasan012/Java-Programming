@@ -1,6 +1,87 @@
 /*
 Problem
 
+Name:Encrypted code
+
+ 
+The entire Air crew was all set and Pan Am 73 was ready to take off. The Pilot triggered On the engine. Following it, he has to send a take off code to the aviation ground station. The radio engineer had to aid him in doing this. The radio engineer had to encrypt the code to be sent. The code was a three digit number and the encrypted code was a sum of the digits in the code.
+
+
+
+Can you help the radio engineer encrypt the code given by the pilot?
+
+Input Format:
+
+The input has a single line containing an integer that corresponds to the take off code.
+
+ 
+
+Output Format:
+
+The output should display in a single line, an integer that corresponds to the encrypted code.
+
+ 
+
+Sample Input:
+
+126
+
+Sample Output:
+
+9
+*/
+
+import java.util.*;
+
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+
+        int code=sc.nextInt();
+        /*
+        int sum=0;
+        while(num>0){
+            int digit=num%10;
+            sum=sum+digit;
+            num=num/10;
+
+        }
+        System.out.printf("%d",sum);
+    }
+}       
+
+
+*/
+        int hundred=code/100;
+        int ten=(code/10)%10;
+        int unit=code%10;
+
+        int sum= hundred+ten+unit;
+
+        System.out.printf("%d",sum);
+
+
+
+
+      }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Problem
+
 Tickets sold for Charity Event
 HelpIndia, a famous NGO has been selective in identifying events to raise funds for charity. Suzanne is a volunteer from the NGO who was selling tickets to the public for the charity event. She sold 'X' more adult tickets than children tickets and she sold twice as many senior tickets as children tickets. Assume that an adult ticket costs $5, children ticket costs $2 and senior ticket costs $3.
 Suzanne made 'Y' dollars from ticket sales. Find the number of adult tickets, children tickets, and senior tickets sold.
