@@ -85,3 +85,30 @@ class Main{
         }
     }
 }
+
+
+/*
+Enter the line number: 4
+1234
+123
+12
+1
+
+*/
+
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.printf("Enter the line number: " );
+        int n=sc.nextInt();
+        for(int row=n;row>=1;row--){
+            for(int col=1;col<=row;col++){
+                System.out.printf("%d",col);
+            }
+            System.out.println();
+        }
+    }
+}
