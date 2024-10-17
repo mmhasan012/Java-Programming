@@ -151,3 +151,35 @@ public class patternH{
         }
     }
 }
+
+/*
+Enter the number of line : 5
+    1
+   12
+  123
+ 1234
+12345
+
+*/
+//code:
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc =new Scanner(System.in);
+        System.out.printf("Enter the number of line : ");
+        int n=sc.nextInt();
+        
+        for(int row=1;row<=n;row++){
+            for(int col=1;col<=n-row;col++){
+                System.out.printf(" ");
+            }
+            for(int col=1;col<=row;col++){
+                System.out.printf("%d",col);
+            
+            
+            }
+            System.out.println();
+        }
+       
+    }
+}
