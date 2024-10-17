@@ -112,3 +112,42 @@ class Main{
         }
     }
 }
+
+
+
+/*
+Enter the line number: 5
+1
+12
+123
+1234
+12345
+1234
+123
+12
+1
+*/
+
+//code:
+import java.util.*;
+public class patternH{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.printf("Enter the line number: " );
+        int n=sc.nextInt();
+        for(int row=1;row<=n;row++){
+            for(int col=1;col<=row;col++){
+                System.out.printf("%d",col);
+            }
+            System.out.println();
+        }
+
+        for(int row=n-1;row>=1;row--){
+            for(int col=1;col<=row;col++){
+                System.out.printf("%d",col);
+            }
+            System.out.println();
+        }
+    }
+}
