@@ -57,3 +57,31 @@ class Main{
     }
 }
 
+
+/*
+Enter the line number
+5
+1
+10
+101
+1010
+10101
+
+*/
+
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter the line number");
+        int n=sc.nextInt();
+        for(int row=1;row<=n;row++){
+            for(int col=1;col<=row;col++){
+                System.out.printf("%d",col%2);
+            }
+            System.out.println();
+        }
+    }
+}
