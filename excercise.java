@@ -303,3 +303,48 @@ class Main
         System.out.printf("%d",count);
     }
 }
+
+/*
+Super Quiz Bee is a famous quiz Competition that tests students on a wide variety of academic subjects. This week’s competition was a Team event and students who register for the event will be given a unique registration code N. The participants are teamed into 10 teams and the team to which a participant is assigned to depends on the absolute difference between the first and last digit in the registration code.
+
+The event organizers wanted your help in writing an automated program that will ease their job of assigning teams to the participants. If the registration number given is less than 10, then the program should display "Invalid Input".
+
+Input Format:
+The only line of input contains an integer N.
+
+Output Format:
+Output the absolute difference between the first and last digit of N.
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+345
+
+Sample Output 1:
+2
+
+Sample Input 2:
+9
+
+Sample Output 2:
+Invalid Input
+*/
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int regno=sc.nextInt();
+        if(regno<10){
+            System.out.println("Invalid Input");
+        }
+        else{
+            String numStr=Integer.toString(regno);
+            int firstD=Character.getNumericValue(numStr.charAt(0));
+            int lastD= Character.getNumericValue(numStr.charAt(numStr.length()-1));
+
+            int diff= Math.abs(firstD-lastD);
+            System.out.printf("%d",diff);
+        }
+    }
+}
+
