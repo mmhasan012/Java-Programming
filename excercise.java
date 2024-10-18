@@ -348,3 +348,58 @@ class Main{
     }
 }
 
+
+
+/*
+Sum of digits
+
+Write a program using while loop to find the sum of digits of a given number.
+
+Input format :
+
+Input consists of an integer value.
+
+Output Format :
+
+Output consists of sum of digits in the input value.
+
+[ Refer Sample Input and Output for further details ]
+
+Sample Input and Output  1 :
+
+[ All text of bold corresponds to Input and the rest output ]
+
+Enter the value :
+1345
+Sum of digits in 1345 is 13
+
+ 
+
+Sample Input and Output  2 :
+
+Enter the value :
+11111
+Sum of digits in 11111 is 5
+*/
+
+//code:
+
+import java.util.*;
+   class Main{
+       public static void main(String[]s){
+           Scanner sc=new Scanner(System.in);
+           System.out.println("Enter the value :");
+           int value =sc.nextInt();
+
+           int sum=0;
+           int temp=value;
+           while(temp!=0){
+               int result=temp%10;
+               sum=sum+result;
+               temp=temp/10;
+           }
+
+           System.out.println("Sum of digits in "+value+ " is "+sum);
+
+       }
+   }
