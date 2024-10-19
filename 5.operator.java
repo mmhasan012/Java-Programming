@@ -19,8 +19,7 @@ Arithmetic operators are used to perform basic mathematical operations.
 * Multiplication: Multiplies two values.
 / Division: Divides one value by another.
 % Modulus: Returns the remainder of a division operation.
-
-    
+   
 Example
 public class operator {
     public static void main(String[] args) {
@@ -109,8 +108,8 @@ Bitwise operators perform operations on individual bits of integer types.
 >>> Unsigned Right Shift
 
 */
-//Example
 
+//Example
 int a = 5;  // 0101 in binary
 int b = 3;  // 0011 in binary
 System.out.println("a & b: " + (a & b)); // 1  (0001 in binary)
