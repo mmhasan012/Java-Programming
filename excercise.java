@@ -492,6 +492,32 @@ Sample Output 3:
 no
 */
 //code:
+import java.util.Scanner;
+
+public class HangingBridgeLegs {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read input values
+        int C = scanner.nextInt();
+        int D = scanner.nextInt();
+        int L = scanner.nextInt();
+        
+        scanner.close();
+
+        // Calculate the maximum and minimum possible legs
+        int maxLegs = 2 * (C + D);
+        int minLegs = 2 * C + 2 * Math.max(0, D - 2 * C);
+
+        // Check if L is within the valid range and even
+        if (L >= minLegs && L <= maxLegs && L % 2 == 0) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
 
 
 
@@ -527,6 +553,8 @@ Sample Output 2:
 40 70
 */
 //code:
+
+
 
 
 
