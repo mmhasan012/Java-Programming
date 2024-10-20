@@ -555,6 +555,93 @@ Sample Output 2:
 //code:
 
 
+/*
+Hotel Royal Gardenia has arranged for an elite business party for the lead industrialists and celebrities of the City. Followed by a dinner buffet, the Event coordinators planned for some casino game events for the high-toned crowd. Peter was a visitor at the party and he takes some number of rubles to the casino with the intention of becoming rich. He plays three machines in turn. Unknown to him, the machines are entirely predictable. Each play costs one ruble. The first machine pays 20 rubles every 25th time it is played; the second machine pays 80 rubles every 120th time it is played; the third pays 8 rubles every 12th time it is played.
+Given the number of rubles with Peter (there will be at least one and fewer than 1000), and the number of times each machine has been played since it last paid, write a program that calculates the number of times Peter plays until he goes broke.
+
+Input Format:
+First line of the input is an integer that corresponds to the number of rubles with Peter.
+Next 3 lines of the input is an integer that corresponds to the number of times each machine has been played since it last paid.
+
+Output Format:
+Output a single line that gives the number of times Peter plays until he goes broke.
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+48
+3
+12
+4
+
+Sample Output 1:
+Peter plays 56 times before going broke
+
+Sample Input 2:
+35
+10
+30
+9
+
+Sample Output 2:
+Peter plays 71 times before going broke
+
+*/
+//code:
+import java.util.Scanner;
+
+public class CasinoGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the number of rubles Peter has
+        int rubles = scanner.nextInt();
+        
+        // Read the number of times each machine has been played
+        int machine1Plays = scanner.nextInt();
+        int machine2Plays = scanner.nextInt();
+        int machine3Plays = scanner.nextInt();
+
+        // Initialize the number of plays
+        int totalPlays = 0;
+
+        // Simulate the game until Peter goes broke
+        while (rubles > 0) {
+            // Play the first machine
+            totalPlays++;
+            rubles--; // Cost of playing
+            machine1Plays++;
+            if (machine1Plays % 25 == 0) {
+                rubles += 20; // Payout from the first machine
+            }
+
+            // Play the second machine
+            if (rubles > 0) {
+                totalPlays++;
+                rubles--; // Cost of playing
+                machine2Plays++;
+                if (machine2Plays % 120 == 0) {
+                    rubles += 80; // Payout from the second machine
+                }
+            }
+
+            // Play the third machine
+            if (rubles > 0) {
+                totalPlays++;
+                rubles--; // Cost of playing
+                machine3Plays++;
+                if (machine3Plays % 12 == 0) {
+                    rubles += 8; // Payout from the third machine
+                }
+            }
+        }
+
+        // Output the total number of plays
+        System.out.println("Peter plays " + totalPlays + " times before going broke");
+    }
+}
+
+
+
 
 
 
