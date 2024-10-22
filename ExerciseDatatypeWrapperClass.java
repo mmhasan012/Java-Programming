@@ -152,10 +152,6 @@ class Main {
 }
 
 /*
-
-
-*/
-//code:
 Be it a last minute get together, a birthday party or corporate events, the "Pine Tree" Event Management Company helps you plan and execute it better and faster. Nikhil, the founder of the company wanted the Amphi Event Management System to get and display the event details from his Customers for every new order of the Company.
 
 Write a program that will get the input of the event details like name of the event, type of the event, number of people expected, a string value (Y/N) telling whether the event is going to be a paid entry and the projected expenses (in lakhs) for the event. The program should then display the input values as a formatted output.
@@ -189,4 +185,33 @@ Event Type : Public
 Expected Count : 5000
 Paid Entry : N
 Projected Expense : 5.7L
+*/
+//code:
 
+   import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+            Scanner sc = new  Scanner (System.in);
+            System.out.println("Enter the name of the event");
+            String eventName=sc.nextLine();
+
+            System.out.println("Enter the type of the event");
+            String eventType =sc.nextLine();
+
+            System.out.println("Enter the number of people expected");
+            int numberOfPeopleExpected =sc.nextInt();
+
+            System.out.println("Is it a paid entry? (Type Y or N)");
+            char type =sc.next().charAt(0);
+
+            System.out.println("Enter the projected expenses (in lakhs) for this event");
+            float projectedExpenses = sc.nextFloat();
+
+            System.out.println("Event Name : "+eventName);
+            System.out.println("Event Type : "+eventType);
+            System.out.println("Expected Count : "+numberOfPeopleExpected);            
+            System.out.println("Paid Entry : "+type);
+            System.out.printf("Projected Expense : %.1fL",projectedExpenses);       
+     }
+}
