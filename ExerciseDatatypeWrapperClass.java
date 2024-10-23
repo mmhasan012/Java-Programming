@@ -284,3 +284,34 @@ public class Main {
 	}
 
 }
+
+/*     Wrapper Class – II       
+Write a Java program to get an input long in binary form and to print the input value in decimal form (base 10) and in binary form.
+Hint : Use the following method defined in the Integer class
+parseLong(String s, int radix)
+
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+Sample Input:
+101010
+
+Sample Output:
+Long value of 101010 is 42
+*/
+//code:
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc= new  Scanner(System.in);
+		String binaryString =sc.nextLine();
+
+		long decimalValue =Long.parseLong(binaryString,2);
+		System.out.println("Long value of "+binaryString+ " is " +decimalValue);
+		
+	}
+
+}
+
