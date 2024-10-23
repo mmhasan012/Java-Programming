@@ -471,3 +471,33 @@ Enter the integer value in radix 8
 11
 The input value in radix 8 is 11
 */
+//code:
+
+
+/*
+Problem
+Date - 2
+Neerja Banhot was the head of the all Indian cabin crew in the Pan Am 73 flight. Neerja made sure that everything inside the flight was fine.
+She noticed that the date being displayed inside the flight in an LED Board was wrong.
+
+She asked help from a few electronics engineers who were on board. The electronics engineers
+figure out that the binary forms of the  date, month and year were 2 bits, 2 bits and 2 bits rotated left.
+Now the engineers will need to fix this. Given the incorrect date, month and 
+the year use the Integer Wrapper Class rotateRight() method to print the correct date in International format.
+
+Input Format:
+The first line is an integer that corresponds to the incorrect day number.
+The second line is an integer that corresponds to the incorrect month number.
+The third line is an integer that corresponds to the incorrect year.
+
+Output Format:
+The Output should display the correct date in a single line separated by slashes in the international format.
+
+Sample Input:
+20
+36
+7944
+Sample Output:
+1986/9/5
+*/
+//code:
