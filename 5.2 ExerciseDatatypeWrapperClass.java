@@ -445,3 +445,29 @@ Enter the integer value in radix 8
 11
 The input value in radix 8 is 11
 */
+//code:
+
+
+
+
+/* 
+Wrapper Class III
+
+Write a Java program to get an input long in a certain radix or base and to print the integer value in the same radix or base.
+
+Hint : Use the following method defined in the Integer class
+parseLong(String s, int radix)
+toString(long i, int radix)
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output:
+Enter the radix
+8
+Enter the integer value in radix 8
+11
+The input value in radix 8 is 11
+*/
