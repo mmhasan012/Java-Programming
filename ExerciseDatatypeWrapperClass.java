@@ -250,3 +250,20 @@ class Main{
 
     } 
 }
+/* 
+Wrapper Class – 1
+
+Write a Java program to print the following static values defined in the Float Wrapper Class
+Maximum exponent a float can hold
+Maximum value a float can hold
+Number of bits used to represent a float value
+
+ Input and Output Format:
+There is no input to this program.
+Refer sample output for formatting specifications.
+ Sample Output:
+Maximum exponent :127
+Maximum value :3.4028235E38
+Number of bits :32
+*/
+//code:
