@@ -215,3 +215,38 @@ class Main {
             System.out.printf("Projected Expense : %.1fL",projectedExpenses);       
      }
 }
+
+/*
+Neerja Banhot was the head of the all Indian cabin crew in the Pan Am 73 flight.
+Neerja made sure that everything inside the flight was fine. She noticed that the date being displayed inside the flight was in the Indian date format.
+
+Since it was an international flight it had to be in the International date format. Given the date, month and year can you print it in the correct format.
+Input Format:
+The first line is an integer that corresponds to the day number.
+The second line is an integer that corresponds to the month number.
+The third line is an integer that corresponds to the year.
+Output Format:
+The Output should display the date in a single line separated by slashes in the international format.
+
+Sample Input 1:
+5
+9
+1986
+Sample Output 1:
+1986/9/5
+*/
+//code:
+import java.util.*;
+class Main{
+
+    public static void main(String[]S){
+
+        Scanner sc= new Scanner(System.in);
+        int day=sc.nextInt();
+        int month=sc.nextInt();
+        int year=sc.nextInt();
+
+        System.out.println(+year+"/"+month+"/"+day);
+
+    } 
+}
