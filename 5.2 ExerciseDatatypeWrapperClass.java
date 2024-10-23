@@ -400,3 +400,48 @@ Dinesh's house is located at (5.7,9.0)
            
        }
    }
+
+/*
+Problem
+
+Welcome Message – 5
+Neerja Banhot was the head of the all Indian cabin crew in the Pan Am 73 flight. Neerja made sure that everything inside the flight was fine.
+She wanted one of her crew members to welcome the passengers to the flight and announce the departure time.  So Neerja confirms the details of the 
+flight number and the departure time (in 24 hrs format) with the pilot.
+Given the flight number, the name of the air hostess and the departure time print the welcome message that her colleague has to say.
+
+Input Format:
+The first line is a integer that corresponds to the flight number.
+The second line is a string that corresponds to the name of the air hostess.
+The third line is a float corresponding to the departure time.
+Output Format:
+The Output should display the welcome message in a single line.
+Print the time correct to two decimal points.
+
+Sample Input 1:
+PanAm73
+Neerja
+5.25
+Sample Output 1:
+Welcome to PanAm73. I am Neerja. Your flight would start at 5.25 Hrs.
+*/
+//code:
+
+
+/*
+Wrapper Class III
+
+Write a Java program to get an input long in a certain radix or base and to print the integer value in the same radix or base.
+Hint : Use the following method defined in the Integer class
+parseLong(String s, int radix)
+toString(long i, int radix)
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+Sample Input and Output:
+Enter the radix
+8
+Enter the integer value in radix 8
+11
+The input value in radix 8 is 11
+*/
