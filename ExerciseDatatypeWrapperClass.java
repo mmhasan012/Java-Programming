@@ -267,3 +267,20 @@ Maximum value :3.4028235E38
 Number of bits :32
 */
 //code:
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int maxExponent=Float.MAX_EXPONENT;
+
+		float maxValue= Float.MAX_VALUE;
+	   int numOfBits=Float.SIZE; 
+
+		System.out.println("Maximum exponent :"+ maxExponent);
+		System.out.println("Maximum value :"+ maxValue);
+		System.out.println("Number of bits :"+ numOfBits);
+
+	}
+
+}
