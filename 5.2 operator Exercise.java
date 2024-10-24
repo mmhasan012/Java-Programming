@@ -68,3 +68,45 @@ Sample Output:
            System.out.printf("%d",p);
        }
    }
+
+
+/*
+Number of seats
+
+Pan Am 73 was ready to take off. Neerja was not sure of the total number of seats in the aircraft. 
+The Aircraft had Re rows and Ce columns in the economic class and Rb rows and Cb columns in the business class.
+Given these details calculate the number of seats in the aircraft.
+Input Format:
+The first line of the input consists of an integer corresponding to Re.
+The second line consists of an integer corresponding to Ce.
+The third line consists of an integer corresponding to Rb.
+The fourth line consists of an integer corresponding to Cb.
+
+Output Format:
+The output should display an integer corresponding to the total number of seats in the aircraft, in a single line.
+
+Sample Input:
+40
+10
+20
+15
+Sample Output:
+700
+*/
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc =new Scanner(System.in);
+        int re=sc.nextInt();
+        int ce=sc.nextInt();
+        int rb=sc.nextInt();
+        int cb=sc.nextInt();
+
+        int a=re*ce;
+        int b=rb*cb;
+
+        int totalSeat=a+b;
+        System.out.printf("%d",totalSeat);
+    }
+}   
