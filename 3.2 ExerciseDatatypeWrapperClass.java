@@ -6,13 +6,10 @@ Meanwhile, Binoy has moved to a new house in the same locality. Now the houses o
 When Ajay asked Dinesh about the location of his house , Dinesh said that his house is at the centroid point of the houses of the other 3. Though Ajay was good in Mathematics, he was puzzled. Can you please help Ajay out?
 
 Given the 3 vertices {(x1,y1), (x2,y2) and (x3,y3)} of a triangle, write a program to determine the point which is the centroid of the 3 vertices.
-
 Input Format:
-
 Input consists of 6 integers. The first integer corresponds to x1. The second integer corresponds to y1. The third and fourth integers correspond to x2 and y2 respectively. The fifth and sixth integers correspond to x3 and y3 respectively.
 
 Output Format:
-
 Refer Sample Input and Output for exact formatting specifications.
 
 [All floating point values are displayed, correct to 1 decimal place]
