@@ -54,10 +54,7 @@ Enumerations (Enums):
 Example: enum Color { RED, GREEN, BLUE };
  */
 
-
-
 public class dataTypes {
-    
     public static void main(String[] args) {
         // Primitive data types
 byte byteVar = 10;
