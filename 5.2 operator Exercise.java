@@ -43,3 +43,29 @@ Sample Output:
 
        }
    }
+/*Passenger Count
+
+Pan Am 73 was ready to take off. But before the take off Neerja wanted to take a count of the total number of passengers on board. The cockpit crew consisted of the Pilot In Command, the Co-Pilot and the Radio Engineer.
+
+
+
+The cabin crew consisted of 15 crew members including Neerja. Given the total number of people on the aircraft find the number of passengers.
+
+
+
+Input Format:
+
+The input consists of one integer T corresponding to the total number of people in the aircraft.
+
+Output Format:
+
+The output should display an integer corresponding to the total number of passengers in the aircraft, in a single line.
+
+Sample Input:
+
+293
+
+Sample Output:
+
+275
+*/
