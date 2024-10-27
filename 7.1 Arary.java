@@ -38,6 +38,22 @@ Array Example
 Here's a simple example of declaring, initializing, and accessing an array.
 code:
  */ 
+
+
+
+class arrayEx {
+    public static void main(String[] args) {
+        int n[]={11,22,33,44};
+        for(int i=0;i<n.length;i++){
+            
+        
+        System.out.println(n[i]);
+        }
+    }
+}
+
+
+
 public class ArrayExample {
     public static void main(String[] args) {
         // Declare and initialize an array
