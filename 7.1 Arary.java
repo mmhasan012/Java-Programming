@@ -73,6 +73,24 @@ public class ArrayExample {
         }
     }
 }
+/*
+Find max element from an 1D array.
+
+*/
+//code:
+class HelloWorld {
+    public static void main(String[] args) {
+        int[] array = { 1, 4, 3, 6, 8, 2, 5};
+ int res = array[0];
+
+ for ( int index=0; index < array.length; index++ )
+ {
+     if ( array[ index ] > res )
+         res = array[ index ];
+ }
+ System.out.println( res );//output:8
+    }
+}
 
 
 
