@@ -77,3 +77,32 @@ Stairs
 
 */
 //code:
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter floor No : ");
+        int fn=sc.nextInt();
+        
+        System.out.print("Enter william's velocity : ");
+        double v1=sc.nextDouble();
+        
+        System.out.print("Enter elevetor velocity : ");
+        double v2=sc.nextDouble();
+        
+        
+        double tStair=(double)(Math.sqrt(2)*fn)/v1;
+        double tElevetor=(double)(2*fn)/v2;
+        
+        if(tStair < tElevetor){
+            System.out.printf("Stair : %.2f s",tStair);
+            
+        }
+        else{
+            System.out.printf("Elevetor : %.2f s ",tElevetor);
+            
+        }
+        
+        
+    }
+}
