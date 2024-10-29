@@ -8,6 +8,8 @@ They store elements of the same data type.
 Ordered.
 The index(Subscript) of an array starts from 0.
 Index can't be negative.
+Array index size can be more compare elements but not less than elements number;
+If Array size is less than array elements then "ArrayOutOfBoud" exception will be throw.
 Java arrays are objects; the array variable stores a reference to the location in memory where the elements are stored.
 
 
