@@ -1,11 +1,13 @@
 /*
 In Java, an array is a data structure that stores a fixed-size sequential collection of elements of the same type. 
 It's useful when you know the number of elements in advance and need to store multiple values in one variable.
+
 ###Key Points
 Arrays have a fixed size, defined when created.
 They store elements of the same data type.
 Ordered.
-The index of an array starts from 0.
+The index(Subscript) of an array starts from 0.
+Index can't be negative.
 Java arrays are objects; the array variable stores a reference to the location in memory where the elements are stored.
 
 
@@ -23,9 +25,10 @@ Initialize an array by specifying the number of elements (size) or by directly p
 Using new keyword with size:
 
 code:
-int[] numbers = new int[5]; // array of 5 integers, initialized to 0 by default
-Directly assigning values:
+int[] numbers = new int[5]; // array of 5 integers, initialized to 0 by default;new operator used for array creation;
+In java for non premative data types as like -Array,List,Class etc the "new" operator is used;
 
+Directly assigning values:
 code:
 int[] numbers = {1, 2, 3, 4, 5};
 
