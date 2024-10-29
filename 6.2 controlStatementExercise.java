@@ -141,3 +141,62 @@ Sample Output 2:
 No
 
 */
+/*
+Problem Requirements:
+Objective: Determine if a given field can be split into three even-numbered fields such that:
+Each field has a positive area.
+The difference in the areas of the fields should be minimal.
+Input: A single integer representing the total area of the field.
+
+Output:
+"Yes" if the field can be split into three even-numbered fields.
+"No" if the field cannot be split as required.
+If "Yes", also output the areas of the three fields in non-decreasing order.
+
+Key Constraints:
+The field areas must be even numbers.
+All three fields must have a positive area.
+The areas must have minimal differences.
+
+Key Observations:
+*Even Number Requirement: Each of the three areas must be even. This implies that 
+the total area itself must be an even number. If the total area is odd, it is immediately impossible to split it into three even areas.
+*Positive Area Requirement: Each of the three fields must have a positive area, which means 
+each area must be at least 2 (since the smallest even positive number is 2).
+*Minimal Difference: To achieve minimal differences, ideally, the areas should be as equal as possible.
+
+Feasibility Conditions:
+*Divisibility by 6: If the total area is divisible by 6, the simplest way to split it would be into three equal parts.
+For instance, if the area is 6, the three parts would be 2, 2, and 2.
+*Divisibility by 2 but not 6: If the area is divisible by 2 but not by 6, more complex considerations are needed to check
+if it can still be split into three even fields.
+
+Steps to Determine the Output:
+Check if the total area is even: If not, print "No".
+Check if the area can be divided into three even parts:
+Calculate the ideal split if the area is divisible by 6.
+If not, check other possible combinations ensuring minimal differences and all parts being even.
+Example Analysis:
+Example 1:
+Input: 6
+Analysis: 6 is divisible by 6. It can be split into 2, 2, and 2.
+Output: Yes, 2 2 2
+Example 2:
+
+Input: 7
+Analysis: 7 is odd and cannot be split into even parts.
+Output: No
+
+Algorithm:
+Read the input area.
+Check if the area is even.
+If the area is divisible by 6, split it into three equal parts.
+If not, check other combinations ensuring minimal differences and even parts.
+
+Output the result.
+Potential Edge Cases:
+Minimum input value (smallest even number, e.g., 2, which can't be split into three positive even parts).
+Larger numbers that are even but not divisible by 6 (e.g., 14, 22).
+
+
+*/
