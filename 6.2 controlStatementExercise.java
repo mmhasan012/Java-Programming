@@ -106,3 +106,38 @@ public class Main{
         
     }
 }
+
+
+
+/*
+*****Area Split
+Pandu, the farmer, has three sons named, Bhima, Arjuna, and Nakula. 
+He has also planned for Three field crop rotation and hand over each field to his three sons.
+His sons are fond of even numbers. So they wanted to split the field only if he is able to split it
+into 3 even number (w.r.to area) fields. Pandu was so particular that the difference in the area of
+the fields should be minimum because he equally liked his three sons. He would split the field only if it is possible,
+else he would do normal farming.
+
+Note that it is possible to split only if all three land have a positive area.
+Write a program to help Pandu in splitting the land.
+Input Format:
+The first (and the only) input line contains an integer that corresponds to the area of the field.
+Note: Assume inputs are positive.
+
+Output Format:
+In the first line of the output, print "Yes", if the field can be divided into
+three parts as per the requirements of Pandu, else print "No".
+If the first line of the output is "Yes", the next line of the output consists of 3 integers separated
+by a space, which corresponds to the areas of the divided field. In case of distinct integers, the smallest number should appear first.
+
+Sample Input 1:
+6
+Sample Output 1:
+Yes
+2 2 2
+Sample Input 2:
+7
+Sample Output 2:
+No
+
+*/
