@@ -187,3 +187,23 @@ Sample Output:
 8
 */
 //code:
+   import java.util.*;
+   class Main{
+       public static void main(String[]s){
+           Scanner sc=new Scanner(System.in);
+
+           int Nc =sc.nextInt();
+            int Bc =sc.nextInt();
+             int Ec =sc.nextInt();
+
+             int totalP=Bc+Ec;
+
+             int crewForBc=(int) Math.round((double) Bc/totalP*Nc);
+             int crewForEc= Nc-crewForBc;
+
+
+             System.out.println(crewForBc);
+             System.out.println(crewForEc);
+
+       }
+   }
