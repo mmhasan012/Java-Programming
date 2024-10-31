@@ -156,3 +156,34 @@ class Main{
     }
 }   
 
+/*
+
+Crew Members
+
+Pan Am 73 was ready to take off. Neerja being the Flight Purser had the responsibility of assigning the cabin crew 
+to each of the classes (Business and Economic) to ensure the passengers are safe and comfortable.
+The number of cabin crew members assigned to a class depends on the number of passengers in that particular class.
+
+Given the number of cabin crew members Nc, the number of people travelling in the business class Bc and 
+the number of people travelling in the economic class Ec, find the number of crew members to be assigned to the business and economic classes.
+
+
+Input Format:
+The first line of the input consists of an integer corresponding to Nc.
+The second line consists of an integer corresponding to Bc.
+The third line consists of an integer corresponding to Ec.
+
+Output Format:
+Output should display in the first line, an integer corresponding to the number of crew members to be assinged to the business class.
+The second line should display an integer corresponding to the number of crew members to be assinged to the economic class.
+
+Sample Input:
+10
+100
+400
+
+Sample Output:
+2
+8
+*/
+//code:
