@@ -103,3 +103,56 @@ class Main{
         System.out.printf("%d",totalSeat);
     }
 }   
+
+
+/* 
+
+Percentage
+
+ 
+
+Pan Am 73 was ready to take off. Neerja wanted to know the distribution of passengers in the economic class and the business class.
+
+Economic Class
+
+Business Class
+
+Given the number of passengers in the business class Bc and economic class Ec, find the percentage of passengers in each class.
+
+Input Format:
+The first line of the input consists of an integer corresponding to Ec.
+The second line consists of an integer corresponding to Bc.
+
+Output Format:
+Output should display in the first line, the floating point integer corresponding to the percentage of passengers travelling in the economic class.
+The second line should display the floating point integer corresponding to the percentage of passengers travelling in the business class.
+Round all floating point integers correct to two decimal places.
+
+Sample Input:
+450
+150
+Sample Output:
+75.00
+25.00
+
+*/
+
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+
+        int ec=sc.nextInt();
+        int bc=sc.nextInt();
+        int total=ec+bc;
+
+        float pctEC=((float)ec/total)*100;
+         float pctBC=((float)bc/total)*100;
+
+         System.out.printf("%.2f",pctEC);
+         System.out.printf("%.2f",pctBC);
+
+    }
+}   
+
