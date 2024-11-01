@@ -207,3 +207,27 @@ Sample Output:
 
        }
    }
+
+
+/*
+Take off position
+
+The entire Air crew was all set and Pan Am 73 was ready to take off.
+The Pilot wanted to know the exact point on the run way from where the flight has to take off.
+He knew from the GPS his current location (x1, y1) and the end point (x2, y2) of the runway. 
+Usually aircrafts take off exactly from the mid-point of the runway.
+
+Given x1,y1,x2 and y2 can you calculate the exact point from which the flight has to take off.
+Input Format:
+The first line of the input consists of the co-ordinates (x1, y1) where x1 and y1 are separated by spaces.
+The second line consists of the co-ordinates (x2, y2) where x1 and y1 are separated by spaces.
+
+Output Format:
+Output should print the co-ordinates at the midpoint of the runway where the flight has to take off, separated by spaces.
+Sample Input:
+2 2
+20 2
+Sample Output:
+11 2
+*/
+//code:
