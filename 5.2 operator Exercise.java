@@ -231,3 +231,22 @@ Sample Output:
 11 2
 */
 //code:
+import java.util.*;
+class Main{
+
+    public static void main(String[]s){
+
+        Scanner sc= new Scanner(System.in);
+        int x1=sc.nextInt();
+         int y1=sc.nextInt();
+          int x2=sc.nextInt();
+           int y2=sc.nextInt();
+
+           int x=(x1+x2)/2;
+           int y=(y1+y2)/2;
+
+           System.out.printf("%d %d",x,y);
+    }
+
+
+}   
