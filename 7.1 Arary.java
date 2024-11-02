@@ -78,10 +78,8 @@ public class ArrayExample {
         }
     }
 }
-/*
-Find max element from an 1D array.
 
-*/
+//Find max element from an 1D array.
 //code:
 class HelloWorld {
     public static void main(String[] args) {
@@ -96,6 +94,7 @@ class HelloWorld {
  System.out.println( res );//output:8
     }
 }
+
 //sum of array from user input;size:5
 //code:
 
