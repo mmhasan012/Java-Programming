@@ -118,8 +118,30 @@ public class Main{
     }
     
 }
+//average of the array from user input;size:5
+//code:
 
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int[] num=new int[5];
+        int sum=0;
+        System.out.println("Enter the numbers :");
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+            
+        }
+        for(int i=0;i<num.length;i++){
+            sum+=num[i];
 
+        }
+        double avg= (double)sum /num.length;
+
+        System.out.println(avg);
+    }
+    
+}
 
 
 
