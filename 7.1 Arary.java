@@ -96,6 +96,28 @@ class HelloWorld {
  System.out.println( res );//output:8
     }
 }
+//sum of array from user input;size:5
+//code:
+
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int[] num=new int[5];
+        int sum=0;
+        System.out.println("Enter the numbers :");
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();//input:1 1 1 1 1
+            
+        }
+        for(int i=0;i<num.length;i++){
+            sum+=num[i];
+            
+        }
+        System.out.println(sum);//output:5
+    }
+    
+}
 
 
 
