@@ -250,3 +250,27 @@ class Main{
 
 
 }   
+/*
+Take off code
+
+The entire Air crew was all set and Pan Am 73 was ready to take off. The Pilot had the engine running. The Pilot had to send a take off code to the aviation ground station. The pilot had various three digit number codes written in his notepad. The code is intrepreted as, the hundredth place referring to the priority, tenth place to the nature of the action and the unit's place referring to the action.
+
+
+
+Given a three digit code number can you explain how does the pilot intrepret the same.
+
+Input Format:
+
+The input consists of an integer corresponding to the take off code.
+
+Output Format:
+The output should display the take off code in lines separately, in a way how it is intrepreted.
+Refer to sample input and output for formatting specifications.
+
+Sample Input:
+126
+Sample Output:
+Priority : 1
+Nature:2
+Action : 6
+*/
