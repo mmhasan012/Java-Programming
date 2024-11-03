@@ -291,4 +291,55 @@ class Main{
         System.out.println("Action : "+action);
     }
 }   
+/*
+Encrypted code
+
+The entire Air crew was all set and Pan Am 73 was ready to take off. The Pilot triggered On the engine. 
+Following it, he has to send a take off code to the aviation ground station. The radio engineer had to aid him in doing this. 
+The radio engineer had to encrypt the code to be sent. The code was a three digit number and the encrypted code was a sum of the digits in the code.
+
+Can you help the radio engineer encrypt the code given by the pilot?
+Input Format:
+The input has a single line containing an integer that corresponds to the take off code.
+Output Format:
+The output should display in a single line, an integer that corresponds to the encrypted code.
+Sample Input:
+126
+Sample Output:
+9
+*/
+//code:
+
+import java.util.*;
+
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+
+        int code=sc.nextInt();
+        /*
+        int sum=0;
+        while(num>0){
+            int digit=num%10;
+            sum=sum+digit;
+            num=num/10;
+
+        }
+        System.out.printf("%d",sum);
+    }
+}       
+
+
+*/
+        int hundred=code/100;
+        int ten=(code/10)%10;
+        int unit=code%10;
+
+        int sum= hundred+ten+unit;
+
+        System.out.printf("%d",sum);
+
+      }
+    
+    }
 
