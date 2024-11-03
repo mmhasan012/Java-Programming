@@ -274,3 +274,21 @@ Priority : 1
 Nature:2
 Action : 6
 */
+
+import java.util.* ;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+
+        int code=sc.nextInt();
+
+        int priority=code/100;
+        int nature=(code/10)%10;
+        int action=code%10;
+
+        System.out.println("Priority : "+priority);
+        System.out.println("Nature : "+nature);
+        System.out.println("Action : "+action);
+    }
+}   
+
