@@ -64,3 +64,38 @@ class Main{
 
     }
 }
+
+
+/*
+Problem
+
+Mean and Median
+Develop a program to calculate the Mean and Median in an Array.
+Mean Ideology:
+        Given ‘N’ size unsorted or sorted array,
+Median Ideology:
+       Given the ‘N’ size sorted array,
+                        the middle element is called Median if ‘N’ is odd;
+                        otherwise, the average of two elements in the middle, if ‘N’ is even.
+Input Format:
+In the first line, read a positive integer that represents the number of elements in an array.
+In the second line, read integer elements for the above array.
+
+Output Format:
+Display the Mean and Median values.
+Restrict the decimal places to two.    
+
+Sample Input 1:
+10
+4978 11735 14216 14470 38120 51135 64630 67060 73429 99233
+Sample Output 1:
+Mean : 43900.60
+Median : 44627.50
+
+Sample Input 2:
+8
+1 3 4 2 6 5 8 7
+Sample Output 2:
+Mean : 4.50
+Median : 4.50
+*/
