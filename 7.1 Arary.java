@@ -142,6 +142,25 @@ public class Main{
     
 }
 
+//Accending order from an Array 
+import java.util.*;
+public class  Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("How many elements in Array ?");
 
+        int n=sc.nextInt();
+        System.out.println("Enter the numbers");
+        int num[] =new int[n];
+        
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+            
+        }
+        Arrays.sort(num);
+        System.out.println("Sorted array is : "+Arrays.toString(num));
+        
+    }
+}
 
 
