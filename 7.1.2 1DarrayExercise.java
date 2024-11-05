@@ -166,3 +166,24 @@ Cumulative sum array
 2 5 10 17 18
 
 */
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of elements in an array");
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        System.out.println("Enter the array elements");
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        int sum=0;
+        System.out.println("Cumulative sum array");
+        for(int i=0;i<num.length;i++){
+            sum+=num[i];
+            System.out.printf("%d ",sum);
+
+        }
+    }
+}
