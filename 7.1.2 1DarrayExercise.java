@@ -99,3 +99,36 @@ Sample Output 2:
 Mean : 4.50
 Median : 4.50
 */
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] num =new int[n];
+
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        int sum=0;
+        for(int i=0;i<num.length;i++){
+            sum=sum+num[i];
+
+        }
+        double mean=(double)sum/num.length;
+        System.out.printf("Mean : %.2f",mean);
+
+        Arrays.sort(num);
+       int midIndex=num.length/2;
+       double median;
+       if(num.length%2==1){
+           median=num[midIndex];
+       }
+       else{
+           median=(double)(num[midIndex-1]+num[midIndex])/2;
+       }
+        System.out.println();
+       System.out.printf("Median : %.2f",median);
+
+    }
+}
