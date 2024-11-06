@@ -230,3 +230,34 @@ Sample Output1:
 25
 -1
 */
+//code:
+import java.util.*;
+
+class Main{
+    public static void main(String args[])
+    {
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] num =new int[n];
+        int[] result=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        for(int i=0;i<num.length;i++){
+            result[i]=-1;
+            for(int j=i+1;j<num.length;j++){
+                if(num[j]>num[i]){
+                    result[i]=num[j];
+                    break;
+                }
+            }
+
+        }
+        
+        for(int i:result){
+            System.out.println(i);
+        }
+
+
+    }
+}
