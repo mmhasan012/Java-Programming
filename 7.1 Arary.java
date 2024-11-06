@@ -163,4 +163,57 @@ public class  Main{
     }
 }
 
+//Ascending and descending oder array using Wrapper class Also.
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number of elements:");
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+            
+        }
+        Arrays.sort(num);
+        System.out.print("Ascending Order :");
+        for(int i=0;i<num.length;i++){
+            System.out.print(" " +num[i]);
+        }
+        System.out.println();
+        System.out.println("Ascending Order :" +  Arrays.toString(num));
+        
+        System.out.print("Descending Order :");
+        
+        for(int i=n-1;i>=0;i--){
+            System.out.print(" " +num[i]);
+        }
+                // Convert to Integer array
+        Integer[] integerArray = new Integer[num.length];
+        for (int i = 0; i < num.length; i++) {
+            integerArray[i] = num[i];
+        }
+
+        // Sort in descending order
+        Arrays.sort(integerArray, Collections.reverseOrder());
+
+        // Print the sorted array
+        System.out.println();
+        System.out.println("Descending order: " + Arrays.toString(integerArray));
+    }
+}
+/*
+ output:
+Enter number of elements:
+4
+
+3 6 2 1
+Ascending Order : 1 2 3 6
+Ascending Order :[1, 2, 3, 6]
+Descending Order : 6 3 2 1
+Descending order: [6, 3, 2, 1]
+
+ */
+ 
 
