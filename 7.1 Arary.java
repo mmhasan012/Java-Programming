@@ -215,5 +215,45 @@ Descending Order : 6 3 2 1
 Descending order: [6, 3, 2, 1]
 
  */
- 
+ //Finding Next greater element in an Array
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("How many elements?");
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        int[] result=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        for(int i=0;i<num.length;i++){
+            result[i]=-1;
+            for(int j=i+1;j<num.length;j++){
+                if(num[j]>num[i]){
+                    result[i]=num[j];
+                    break;
+                }
+            }
+            
+        }
+        for(int i:result){
+            System.out.println(i);
+        }
+        
+    }
+}
+/*
+output:
+How many elements?
+5
+1 6 3 99 2
+6
+99
+99
+-1
+-1
+
+*/
 
