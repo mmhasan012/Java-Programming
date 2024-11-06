@@ -187,3 +187,46 @@ class Main{
         }
     }
 }
+
+
+/*
+NEXT GREATER ELEMENT
+Given an array, write a program to print the Next Greater Element for every element.
+The Next greater Element for an element x is the first greater element on the right side of x in array. Elements for which no greater element exist, consider next greater element as -1.
+
+Examples:
+a) For any array, rightmost element always has next greater element as -1.
+b) For an array which is sorted in decreasing order, all elements have next greater element as -1.
+c) For the input array [4, 5, 2, 25}, the next greater elements for each element are as follows.
+Element       NGE
+   4      -->   5
+   5      -->   25
+   2      -->   25
+   25     -->   -1
+d) For the input array {13, 7, 6, 12}, the next greater elements for each element are as follows.
+Element       NGE
+   13     -->    -1
+   7       -->    12
+   6       -->    12
+   12     -->    -1
+
+Input Format:
+The first line of the input consists of an integer, n that corresponds to the number of elements in the input array.
+The next 'n' lines in the input correspond to the elements in the array.
+
+Output Format:
+Output is an array of integers.
+Refer sample input and output for formatting specifications.
+
+Sample Input1:
+4
+4
+5
+2
+25
+Sample Output1:
+5
+25
+25
+-1
+*/
