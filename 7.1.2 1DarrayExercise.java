@@ -261,3 +261,30 @@ class Main{
 
     }
 }
+
+
+/*
+Fruit yielding tree
+Jack owned a farm which had ‘n’  fruit trees. He sold a tree from the farm which yielded the maximum number of fruits.
+Now, he wanted to find the tree that yielded the second maximum number of fruits. 
+Write a program to help Jack in finding the second-largest fruit-yielding tree without sorting.
+                                                                       
+Input format:
+The first line of the input corresponds to the n.
+The next n inputs correspond to the number of fruits yielded by each tree.
+
+Output format:
+The output is an integer which corresponds to the second largest fruit-yielding tree from the farm.
+Sample Input:
+7
+7
+5
+8
+6
+9
+4
+3
+Sample Output:
+8
+
+*/
