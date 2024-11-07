@@ -288,3 +288,28 @@ Sample Output:
 8
 
 */
+//code 1: 83% test case passed
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        int result=num[0];
+        for(int i=0;i<num.length;i++){
+            if(num[i]>result){
+                result=num[i];
+            }
+        }
+        int large2nd=num[0];
+        for(int i=0;i<num.length;i++){
+            if(num[i]>large2nd && num[i] !=result){
+                large2nd=num[i];
+            }
+        }
+        System.out.println(large2nd);
+    }
+}
