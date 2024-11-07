@@ -313,3 +313,5 @@ class Main{
         System.out.println(large2nd);
     }
 }
+
+//code 2: 100% test case passed
