@@ -288,7 +288,8 @@ Sample Output:
 8
 
 */
-//code 1: 83% test case passed
+//code 1: 83.33% test case passed
+
 import java.util.*;
 class Main{
     public static void main(String[]s){
@@ -314,4 +315,32 @@ class Main{
     }
 }
 
-//code 2: 100% test case passed
+
+
+//code 2: 83.33% test case passed
+
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+
+        int temp;      
+        for(int i=0;i<num.length-1;i++){
+            for(int j=0;j<num.length-1-i;j++){
+                if(num[j]>num[j+1]){
+                    temp=num[j];
+                    num[j]=num[j+1];
+                    num[j+1]=temp;
+
+                }
+            }
+        }
+        int index= num[num.length-2];
+        System.out.println(index);
+    }
+}
