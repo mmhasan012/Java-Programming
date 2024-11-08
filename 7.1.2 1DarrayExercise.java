@@ -344,3 +344,36 @@ class Main{
         System.out.println(index);
     }
 }
+//code 3:100% test case passed
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+
+        int temp;      
+        for(int i=0;i<num.length-1;i++){
+            for(int j=0;j<num.length-1-i;j++){
+                if(num[j]>num[j+1]){
+                    temp=num[j];
+                    num[j]=num[j+1];
+                    num[j+1]=temp;
+
+                }
+            }
+        }
+        int largest=num[n-1];
+        int largest2nd=Integer.MIN_VALUE;
+        for(int i=num.length-2;i>=0;i--){
+            if(num[i]<largest){
+                largest2nd=num[i];
+                break;
+            }
+        }
+        System.out.println(largest2nd);
+    }
+}
