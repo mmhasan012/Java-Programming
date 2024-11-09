@@ -377,3 +377,53 @@ class Main{
         System.out.println(largest2nd);
     }
 }
+
+
+
+/*
+LEADERS
+Write a program to print all the leaders in the array.
+
+An element is leader if it is greater than all the elements to its right side. And the rightmost element is always a leader.
+
+For example in the array {16, 17, 4, 3, 5, 2}, leaders are 17, 5 and 2.
+
+Input and Output Format:
+The first line of the input consists of an integer, n that corresponds to the number of elements in the input array.
+The next 'n' lines in the input correspond to the elements in the array.
+
+Output Format:
+Output is an integers.
+Refer sample input and output for formatting details.
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+Sample Input and Output 1:
+
+Enter the number of elements in an array
+6
+
+Enter the array elements
+16
+17
+4
+3
+5
+2
+Leaders are
+17
+5
+2
+Sample Input and Output 2:
+Enter the number of elements in an array
+6
+Enter the array elements
+16
+17
+4
+3
+18
+19
+Leaders are
+19
+
+*/
