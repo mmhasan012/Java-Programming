@@ -127,3 +127,66 @@ public class ArrayListExample {
         }
     }
 }
+
+//All operation of ArrayList
+
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        ArrayList<Integer> num=new ArrayList<Integer>();
+        num.add(1);
+        num.add(2);
+        num.add(3);
+        num.add(3,4);//index:3 & data:4
+        
+        
+        System.out.println("ArrayList Size is :");//output:4
+        System.out.println(num.size());//output:4
+        System.out.println("Numbers are :");
+        for(int x:num){
+            System.out.print(" " +x);//output:1 2 3 4
+        }
+        System.out.println();
+        num.add(2,1);//data will allocate in index 2;previous data will not deleted;that's will shift in next right index
+        System.out.println("After data allocation inside arraylist :");
+        for(int x:num){
+            System.out.print(" " +x);//output:1 2 1 3 4
+        }
+        System.out.println();
+        
+        num.remove(0);//'0'is index number
+        System.out.println("After remove specific data:");
+        for(int x:num){
+            System.out.print(" " +x);//output:2 1 3 4
+        }
+        System.out.println();
+        //print specific index value
+        System.out.println("Index '0' Data :" +num.get(0));//o/p:2
+        System.out.println();
+        
+        //replace data
+        num.set(2,5);
+        System.out.println("After replace the Index'2' data :");
+        for(int x:num){
+            System.out.print(" " +x);//output:2 1 3 4
+        }
+        System.out.println();
+        //check the specific element is avoilable or not
+        boolean has_2=num.contains(2);
+        System.out.println("Data '2' available :" +has_2);
+        boolean has_100=num.contains(100);
+        System.out.println("Data '100' available :" +has_100);
+        System.out.println();
+        
+        boolean check=num.isEmpty();
+        System.out.println("ArrayList is empty :" +check );
+        System.out.println();
+        
+        num.clear();
+        System.out.print("ArrayList elements are : " );
+        for(int x:num){
+        System.out.print(" " +x);
+        }
+
+    }
+}
