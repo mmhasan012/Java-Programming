@@ -427,3 +427,35 @@ Leaders are
 19
 
 */
+//code:
+import java.util.*;
+class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of elements in an array");
+        int n=sc.nextInt();
+        int[] num=new int[n];
+        System.out.println("Enter the array elements");
+
+        for(int i=0;i<num.length;i++){
+            num[i]=sc.nextInt();
+        }
+        ArrayList<Integer> leader =new ArrayList<Integer>();
+         int maxRight=num[n-1];
+         leader.add(maxRight);
+
+         for(int i=num.length-2;i>=0;i--){
+             if(num[i]>maxRight){
+                 leader.add(num[i]);
+                 maxRight=num[i];
+
+             }
+         }
+         System.out.println("Leaders are");
+         for(int i=leader.size()-1;i>=0;i--){
+             System.out.println(leader.get(i));
+         }
+        
+    }
+}
+ 
