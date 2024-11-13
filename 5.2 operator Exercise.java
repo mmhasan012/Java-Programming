@@ -343,3 +343,22 @@ class Main{
     
     }
 
+/*
+Time – Karachi landing
+
+Pan Am 73 was on air. Neerja had to announce the time at which they would reach Karachi. 
+But since there were a few children on board she did not want to announce the time in 24 hour format but in 12 hour format.
+
+But the 'hours' value in the 24 hour time format needed to be converted. Can you help her doing this?
+For example, 23.30hrs is 11.30 PM. It is evident that the minutes count doesn't change during the conversion, that is only 23 gets converted to 11.
+
+Input Format:
+The input consists of a single line containing an integer that corresponds to the hour value of the 24 hour time format.
+Output Format:
+Output should display in a single line an integer corresponding to the hour value after conversion.
+Sample Input:
+22
+Sample Output:
+10
+
+*/
