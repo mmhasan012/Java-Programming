@@ -400,3 +400,17 @@ Sample Output:
 1.75
 */
 //code:
+   import java.util.*;
+   class Main{
+       public static void main(String[]s){
+           Scanner sc=new Scanner(System.in);
+
+           int S=sc.nextInt();
+           int D=sc.nextInt();
+
+           float T=(float)D/S;
+
+           System.out.printf("%.2f",T);
+
+       }
+   }
