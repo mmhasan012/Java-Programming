@@ -363,6 +363,23 @@ Sample Output:
 
 */
 //code
+   import java.util.*;
+   class Main{
+       public static void main(String[]s){
+
+           Scanner sc=new Scanner(System.in);
+
+           int time24=sc.nextInt();
+           int time12 = time24%12;
+
+           if(time24%12==0){
+               time12=12;
+           }
+
+           System.out.printf("%d",time12);
+
+       }
+   }
 
 /*
 Remaining Flight Time
