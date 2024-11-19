@@ -362,3 +362,23 @@ Sample Output:
 10
 
 */
+//code
+
+/*
+Remaining Flight Time
+
+Pan Am 73 was on air. Neerja had to announce the time at which they would reach Karachi.
+Neerja had a fair idea about the average speed S (in kmph) of the aircraft and she knew the distance D (in km) to be covered to reach Karachi.
+Given S and D, can you calculate the time (in minutes) still left to reach Karachi.
+Input Format:
+The first line of the input corresponds to an integer S, the speed of the aircraft in kmph.
+The second line corresponds to an integer D, the distance between the aircraft and Karachi.
+Output Format:
+The Output should display a floating point integer that returns the time still left to reach Karachi, in minutes. Round off the value to two decimal points.
+
+Sample  Input:
+400
+700
+Sample Output:
+1.75
+*/
