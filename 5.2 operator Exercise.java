@@ -450,3 +450,38 @@ Enter the average rating for show 3
 5
 The overall average rating for the show is 9.22
 */
+//code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+            Scanner sc =new Scanner(System.in);
+
+            System.out.println("Enter the number of people who watched show 1");
+            int s1=sc.nextInt();
+            System.out.println("Enter the average rating for show 1");
+            float r1=sc.nextFloat();
+
+            System.out.println("Enter the number of people who watched show 2");
+            int s2=sc.nextInt();
+            System.out.println("Enter the average rating for show 2");
+            float r2=sc.nextFloat();
+
+
+            System.out.println("Enter the number of people who watched show 3");
+            int s3=sc.nextInt();
+            System.out.println("Enter the average rating for show 3");
+            float r3=sc.nextFloat();
+
+            int totalPeople=s1+s2+s3;
+
+            float totalRatingInShow1=s1*r1;
+            float totalRatingInShow2=s2*r2;
+            float totalRatingInShow3=s3*r3;
+
+            float overAllAvgRating=(totalRatingInShow1+totalRatingInShow2+totalRatingInShow3)/totalPeople;
+            System.out.printf("The overall average rating for the show is %.2f",overAllAvgRating);
+
+        
+     }
+}
