@@ -567,3 +567,18 @@ Minimum number of times is 3
 */
 //code:
 
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter m");
+            int m=sc.nextInt();
+            System.out.println("Enter n");
+            int n=sc.nextInt();
+
+            int totalBreaks= m*n-1;
+            System.out.println("Minimum number of times is "+totalBreaks);
+        
+     }
+}
