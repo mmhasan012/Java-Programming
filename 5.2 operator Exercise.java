@@ -612,3 +612,23 @@ Number of senior tickets sold : 100
 
 */
 //code:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the value of X");
+            int x=sc.nextInt();
+            System.out.println("Enter the value of Y");
+            int y=sc.nextInt();
+
+            int childT=(y-5*x)/13;
+            int adultT=childT+x;
+            int seniorT=childT*2;
+
+            System.out.println("Number of children tickets sold : "+childT);
+            System.out.println("Number of adult tickets sold : "+adultT);
+            System.out.println("Number of senior tickets sold : "+seniorT);
+
+     }
+}
