@@ -31,7 +31,23 @@ Welcome to the show
 Please note that you should be accompanied by an adult
 */
 //code:
+import java.util.*;
 
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        if(age>=15){
+            System.out.println("Welcome to the show");
+        }
+        else{
+            System.out.println("Welcome to the show");
+            System.out.println("Please note that you should be accompanied by an adult");
+        }
+    }
+}
 
 /*
 Plants under shade
