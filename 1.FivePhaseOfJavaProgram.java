@@ -22,13 +22,16 @@ javac HelloWorld.java
 This command generates a HelloWorld.class file containing the bytecode.
 
 3. Load
-In the load phase, the JVM's class loader loads the .class file into memory. The class loader is responsible for finding and loading the necessary classes for the execution of the program.
+In the load phase, the JVM's class loader loads the .class file into memory. The class loader is responsible for finding and loading the necessary
+classes for the execution of the program.
 
 4. Verify
-During the verification phase, the bytecode verifier checks the loaded bytecode to ensure that it is valid and does not violate Java's security constraints. This step ensures that the bytecode adheres to the Java language specifications and does not perform any illegal operations.
+During the verification phase, the bytecode verifier checks the loaded bytecode to ensure that it is valid and does not violate Java's security constraints. 
+This step ensures that the bytecode adheres to the Java language specifications and does not perform any illegal operations.
 
 5. Execute
-In the execution phase, the JVM's interpreter or Just-In-Time (JIT) compiler translates the bytecode into machine code, which is then executed by the host machine. The execution starts with the main method of the loaded class.
+In the execution phase, the JVM's interpreter or Just-In-Time (JIT) compiler translates the bytecode into machine code, which is then executed by the host machine. 
+The execution starts with the main method of the loaded class.
 
 Example:
 java HelloWorld
