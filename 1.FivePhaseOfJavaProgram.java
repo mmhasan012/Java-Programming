@@ -8,10 +8,13 @@ A Java program typically goes through five phases from development to execution.
 5.Execute
 
 1. Edit
-In this phase, the programmer writes the source code in a text editor. The source code is written in a file with a .java extension. Various Integrated Development Environments (IDEs) like Eclipse, IntelliJ IDEA, and NetBeans or simple text editors like Notepad++ and VS Code can be used for this purpose.
+In this phase, the programmer writes the source code in a text editor. The source code is written in a file with a .
+java extension. Various Integrated Development Environments (IDEs) like Eclipse, IntelliJ IDEA, and NetBeans or simple text editors 
+like Notepad++ and VS Code can be used for this purpose.
 
 2. Compile
-During the compile phase, the Java compiler (javac) converts the source code (.java file) into bytecode (.class file). Bytecode is a platform-independent code that can be executed on any system that has a Java Virtual Machine (JVM).
+During the compile phase, the Java compiler (javac) converts the source code (.java file) into bytecode (.class file).
+Bytecode is a platform-independent code that can be executed on any system that has a Java Virtual Machine (JVM).
 
 Example:
 javac HelloWorld.java
