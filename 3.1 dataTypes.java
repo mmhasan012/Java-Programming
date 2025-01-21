@@ -11,24 +11,31 @@ each of which is predefined by the language and named by a reserved keyword.
 byte:Size: 8-bit
 Range: -128 to 127
 Example: byte b = 100;
+
 short:Size: 16-bit
 Range: -32,768 to 32,767
 Example: short s = 10000;
+
 int:Size: 32-bit
 Range: -2^31 to 2^31 - 1
 Example: int i = 100000;
+
 long:Size: 64-bit
 Range: -2^63 to 2^63 - 1
 Example: long l = 100000L;
+
 float:Size: 32-bit
 Single-precision floating point
 Example: float f = 234.5f;
+
 double:Size: 64-bit
 Double-precision floating point
 Example: double d = 123.4;
+
 boolean:Size: not precisely defined
 Values: true or false
 Example: boolean b = true;
+
 char:Size: 16-bit
 Range: '\u0000' (or 0) to '\uffff' (or 65,535)
 Example: char c = 'A';
