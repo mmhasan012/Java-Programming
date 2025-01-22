@@ -48,10 +48,8 @@ Dinesh's house is located at (5.7,9.0)
 
 //code:
    import java.util.*;
-
    public class Main{
        public static void main(String[]s){
-
            Scanner sc= new Scanner(System.in);
            System.out.println("X1");
            int x1=sc.nextInt();
@@ -105,13 +103,10 @@ class Main {
         
             // Fill your code here
             
-
             Scanner sc =new Scanner (System.in);
             System.out.println("Enter your name");
             String name = sc.nextLine();
             System.out.println("Hello " + name + " ! Welcome to Amphi Event Management System");
-
-        
      }
 }
 
