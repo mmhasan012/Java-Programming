@@ -123,23 +123,41 @@ public class Main{
 import java.util.*;
 public class Main{
     public static void main(String[]s){
-        Scanner sc=new Scanner(System.in);
-        int[] num=new int[5];
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the size of array :");
+        int n =sc.nextInt();
+        int[] numbers = new int[n];
+        System.out.println("Enter the numbers: ");
+        for(int i=0;i<numbers.length;i++){
+            numbers[i] =sc.nextInt();
+        }
+        
         int sum=0;
-        System.out.println("Enter the numbers :");
-        for(int i=0;i<num.length;i++){
-            num[i]=sc.nextInt();
+        for(int i=0;i<numbers.length;i++){
+            sum=sum+numbers[i];
+        }
+        
+        System.out.println("The sum of Numbers is :"+sum);
+        double avg= (double)sum/numbers.length;
+        System.out.println("The average is:"+avg);
+        
+        int max=numbers[0];
+        int min=numbers[0];
+        for(int i=1;i<numbers.length;i++){
+            if(max<numbers[i]){
+                max=numbers[i];
+            }
+            if(min>numbers[i]){
+                min=numbers[i];
+            }
             
         }
-        for(int i=0;i<num.length;i++){
-            sum+=num[i];
-
-        }
-        double avg= (double)sum /num.length;
-
-        System.out.println(avg);
+        System.out.println("Maximum number is: "+max);
+        System.out.println("Minimum number is: "+min);
+        
+        
+        
     }
-    
 }
 
 //Accending order from an Array 
