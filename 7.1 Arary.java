@@ -117,7 +117,7 @@ public class Main{
     }
     
 }
-//average of the array from user input;size:5
+//sum,average,maximum,minimum of the array from user input;size:from user input
 //code:
 
 import java.util.*;
