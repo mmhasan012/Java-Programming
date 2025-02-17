@@ -106,7 +106,7 @@ public class Main{
         int sum=0;
         System.out.println("Enter the numbers :");
         for(int i=0;i<num.length;i++){
-            num[i]=sc.nextInt();//input:1 1 1 1 1
+            num[i]=sc.nextInt();
             
         }
         for(int i=0;i<num.length;i++){
@@ -152,8 +152,8 @@ public class Main{
             }
             
         }
-        System.out.println("Maximum number is: "+max);
-        System.out.println("Minimum number is: "+min);
+        System.out.println("Maximum number is: "+max);//
+        System.out.println("Minimum number is: "+min);//
         
         
         
