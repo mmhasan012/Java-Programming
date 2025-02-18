@@ -126,5 +126,57 @@ public class Main{
     }
 }
 
-
+//take a,b input matrix [2][3] from user;and print the both matrix and sum:
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int[][] a =new int[2][3];
+        int[][] b =new int[2][3];
+        int[][] c =new int[2][3];
+        System.out.println("Enter the matrix a:");
+        for(int row=0;row<2;row++){
+            for(int col=0;col<3;col++){
+                System.out.print("["+row+"]"+"["+col+"]:");
+                a[row][col]=sc.nextInt();
+            }
+        }
+        
+        System.out.println("Enter the matrix b:");
+        for(int row=0;row<2;row++){
+            for(int col=0;col<3;col++){
+                System.out.print("["+row+"]"+"["+col+"] :");
+                b[row][col]=sc.nextInt();
+            }
+        }
+        
+        System.out.println("The matrix a is :");
+        for(int row=0;row<2;row++){
+            for(int col=0;col<3;col++){
+                System.out.print(" "+ a[row][col]);
+                
+            }
+            System.out.println();
+        }
+        
+        System.out.println("The matrix b is :");
+        for(int row=0;row<2;row++){
+            for(int col=0;col<3;col++){
+                System.out.print(" "+ b[row][col]);
+                
+            }
+            System.out.println();
+        }
+        System.out.println("The sum of matrix a and b is:");
+       for(int row=0;row<2;row++){
+           for(int col=0;col<3;col++){
+                c[row][col]=a[row][col]+b[row][col];
+                System.out.print(" "+c[row][col] );
+           }
+           System.out.println();
+           
+       }
+        
+    }
+}
 
