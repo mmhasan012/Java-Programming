@@ -180,3 +180,61 @@ public class Main{
     }
 }
 
+/*
+Maximum Element In Each Row
+Write a program to find the maximum element in each row of the matrix.
+Input Format:
+The input consists of (m*n+2) integers. The first integer corresponds to m, the number of rows in the matrix and the second integer corresponds to n,
+ the number of columns in the matrix. The remaining integers correspond to the elements in the matrix. The elements are read in rowwise order,
+ first row first, then second row and so on. Assume that the maximum value of m and n is 10.
+Output Format:
+Refer sample output for details.
+Sample Input 1:
+3
+2
+4 5
+6 9
+0 3
+Sample Output 1:
+5
+9
+3
+*/
+
+//code:
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the rows number:");
+        int m=sc.nextInt();
+        System.out.println("Enter the coloumn number:");
+        int n=sc.nextInt();
+        int[][] a=new int[m][n];
+        
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                System.out.print("[" +i +"]" +"[" +j+"] :");
+                a[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                System.out.print(" "+ a[i][j]);
+            }
+            System.out.println();
+            
+        }
+        for(int i=0;i<m;i++){
+            int max = a[i][0];
+            for(int j=1;j<n;j++){
+                if(a[i][j]>max){
+                    max=a[i][j];
+                }
+                
+            }
+            System.out.println(max);
+        }
+        
+    }
+}
