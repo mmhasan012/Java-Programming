@@ -100,8 +100,31 @@ This example demonstrates how to work with 2D arrays in Java, including both sta
     as well as how to access and print the elements of a 2D array.
 
 */
-
-
+//taking matrix "a" as an input from user and print:
+ 
+import java.util.*;
+public class Main{
+    public static void main(String[]s){
+        Scanner sc=new Scanner(System.in);
+        int[][] a =new int[2][3];
+        
+        
+        System.out.println("Enter the matrix :");
+        for(int row=0;row<2;row++){
+            for(int col=0;col<3;col++){
+                System.out.print("["+row+"]"+"["+col+"] :");
+                a[row][col]=sc.nextInt();
+            }
+        }
+        System.out.println("The matrix a is:"  );
+        for(int row=0;row<2;row++){
+            for(int col=0;col<3;col++){
+                System.out.print(" "+a[row][col]);
+            }
+            System.out.println();
+        }        
+    }
+}
 
 
 
