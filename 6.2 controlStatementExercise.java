@@ -339,3 +339,39 @@ Sample Output 2:
 
 2 3 5 7 11 13 17 19 23 29
 */
+//code:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        
+        int count = 0;
+        int currentNumber = 2;
+        String result = "";
+        
+        while (count < N) {
+            boolean isPrime = true;
+            for (int i = 2; i * i <= currentNumber; i++) {
+                if (currentNumber % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            
+            if (isPrime) {
+                if (count == 0) {
+                    result += currentNumber;
+                } else {
+                    result += " " + currentNumber;
+                }
+                count++;
+            }
+            
+            currentNumber++;
+        }
+        
+        System.out.println(result);
+    }
+}
